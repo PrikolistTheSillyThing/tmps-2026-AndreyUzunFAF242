@@ -209,15 +209,6 @@ Press 3 to find a book
 - Adding a book with an invalid year cancels the operation
 
 
-## Possible Improvements
-
-The lab covers SRP, OCP and DIP, but the design is not perfect:
-
-- `InMemoryBookRepository` prints messages to the console, which mixes storage with output. Returning a result (e.g. `boolean`) and letting `Main` print would respect SRP more strictly
-- The ID counter is a `static` field inside `Book`, so the book is also responsible for ID generation. Moving it to the repository or a separate generator would fix that
-- `Main` prints "was added to the library" even when `save()` rejects the book as a duplicate
-- `Library` currently just forwards calls to the repository, real business rules (e.g. limits, validation) could be added there
-
 
 ## Overall Logic
 
