@@ -34,6 +34,8 @@ lab1
     └── InMemoryBookRepository.java
 ```
 
+<img width="2720" height="2720" alt="library_system_uml_class_diagram" src="https://github.com/user-attachments/assets/a4b8eb0a-2485-497e-b568-34857713c593" />
+
 
 
 ## Part A: Single Responsibility Principle (SRP)
